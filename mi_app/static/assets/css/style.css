@@ -1,0 +1,79 @@
+/* Aplicar Flexbox al body */
+body {
+    display: flex;
+    flex-direction: column; /* Los elementos estarán en columna */
+    min-height: 100vh; /* Asegura que el body tenga al menos el 100% de la altura de la ventana */
+    background: linear-gradient(to bottom, #2F085F, #4425D1, #2F085F); /* Fondo con gradiente */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin: 0; /* Elimina márgenes en el body */
+}
+
+/* Contenedor principal */
+.container {
+    flex-grow: 1; /* Hace que el contenedor ocupe el espacio disponible */
+}
+
+/* Clase para el título con gradiente de color */
+.text-gradient {
+    font-size: 4rem; /* Título grande */
+    font-weight: bold;
+    color: deepskyblue;    
+    /* Borde negro alrededor del texto */
+    -webkit-text-stroke: 2px black; /* Borde de 2 píxeles de color negro */
+}
+
+
+/* Clase para los textos en la descripción */
+.text {
+    font-size: 1.2rem; /* Tamaño de texto cómodo */
+    line-height: 1.6;
+    color: deepskyblue;
+    text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black;
+}
+
+.navbar-custom {
+    background-color: #513dadd3; /* Color morado */
+    padding: 0.5rem 1rem; /* Ajuste de padding */
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: white; /* Texto blanco para los enlaces */
+    font-size: 1rem; /* Asegura que los enlaces sean legibles */
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #d01de7; /* Efecto al pasar el mouse (tono magenta) */
+}
+
+/* Título del logo */
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.color-white {
+    color: white; /* Texto blanco para el pie de página */
+}
+
+/* Estilo del pie de página */
+.footer-custom {
+    background-color: #260d55; /* Un tono más oscuro de morado */
+    text-align: center; /* Centra el contenido */
+    padding: 1rem; /* Espaciado dentro del footer */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    margin-top: auto; /* Empuja el footer hacia el fondo */
+}
+
+.img-logo{
+    width: 80px;
+
+}
+
+.arrow-img {
+    width: 110px;
+    margin-left: auto;  /* Centrar la imagen */
+    margin-right: auto; /* Centrar la imagen */
+    display: block;     /* Hace que el contenedor trate la imagen como un bloque */
+}
