@@ -75,6 +75,7 @@ body {
     margin-left: auto;  /* Centrar la imagen */
     margin-right: auto; /* Centrar la imagen */
     display: block;     /* Hace que el contenedor trate la imagen como un bloque */
+
 }
 
 .download-buttons {
