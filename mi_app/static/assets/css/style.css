@@ -3,11 +3,11 @@ body {
     display: flex;
     flex-direction: column; /* Los elementos estarán en columna */
     min-height: 100vh; /* Asegura que el body tenga al menos el 100% de la altura de la ventana */
-    background: linear-gradient(to bottom, #2F085F, #4425D1, #2F085F); /* Fondo con gradiente */
-    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    margin: 0; /* Elimina márgenes en el body */
+    background: linear-gradient(to bottom, #2F085F, #4425D1, #2F085F);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
 }
 
 /* Contenedor principal */
@@ -23,7 +23,6 @@ body {
     /* Borde negro alrededor del texto */
     -webkit-text-stroke: 2px black; /* Borde de 2 píxeles de color negro */
 }
-
 
 /* Clase para los textos en la descripción */
 .text {
@@ -60,15 +59,15 @@ body {
 /* Estilo del pie de página */
 .footer-custom {
     background-color: #260d55; /* Un tono más oscuro de morado */
-    text-align: center; /* Centra el contenido */
-    padding: 1rem; /* Espaciado dentro del footer */
-    width: 100%; /* Asegura que ocupe todo el ancho */
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
     margin-top: auto; /* Empuja el footer hacia el fondo */
+    position: relative; /* Para asegurarse de que quede en la parte inferior */
 }
 
 .img-logo{
     width: 80px;
-
 }
 
 .arrow-img {
@@ -76,4 +75,64 @@ body {
     margin-left: auto;  /* Centrar la imagen */
     margin-right: auto; /* Centrar la imagen */
     display: block;     /* Hace que el contenedor trate la imagen como un bloque */
+}
+
+.download-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 130px;
+    margin-top: 10px;
+}
+
+.mobile-link {
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 15px 30px; /* Espaciado dentro del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 18px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición para el cambio de color */
+}
+
+.mobile-link:hover {
+    background-color: #0056b3; /* Color de fondo cuando el usuario pasa el ratón */
+}
+
+/* Regla de media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+
+    /* Ajustar el tamaño del título */
+    .text-gradient {
+        font-size: 2.5rem; /* Reduce el tamaño del título */
+    }
+
+    /* Ajustar los márgenes de las imágenes */
+    .arrow-img {
+        width: 80px; /* Reduce el tamaño de la imagen */
+    }
+
+    /* Ajustar la disposición de los botones de descarga */
+    .download-buttons {
+        margin-right: 0; /* Elimina el margen derecho */
+        margin-left: 0; /* Elimina el margen izquierdo */
+    }
+
+    .mobile-link {
+        padding: 12px 25px; /* Ajusta el tamaño del botón */
+        font-size: 16px; /* Ajusta el tamaño de la fuente */
+    }
+
+    /* Ajustar el logo */
+    .img-logo {
+        width: 60px; /* Ajusta el tamaño del logo */
+    }
+
+    /* Ajustar la barra de navegación */
+    .navbar-custom .navbar-nav .nav-link {
+        font-size: 0.9rem; /* Reduce el tamaño de los enlaces */
+    }
 }
