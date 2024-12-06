@@ -55,6 +55,20 @@
         <div class="arrow-container">
             <img src="../static/assets/img/Flecha roja.png" alt="Flecha" class="arrow-img">
         </div>
+        <div class="download-buttons">
+            {% if request.user_agent.is_pc %}
+            <!-- Imagen de descarga APK para PC -->
+            <a href="#">
+                <h2>Download it here:</h2>
+                <img style="margin-left: 150px;" src="{% static 'assets/img/qr.png' %}" alt="Download the apk of beLoved"
+                    width="200" height="200">
+            </a>
+            {% elif request.user_agent.is_mobile %}
+            <!-- Enlace de descarga para móviles -->
+            <a href="https://github.com/cosyfps/be-loved" class="mobile-link">Download the APK for your mobile
+                device</a>
+            {% endif %}
+        </div>
 
     <!-- Footer (pie de página) -->
     <footer class="footer-custom text-white text-center py-3 mt-5">
